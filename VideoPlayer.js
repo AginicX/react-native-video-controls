@@ -185,6 +185,7 @@ export default class VideoPlayer extends Component {
         }
 
         this.setState( state );
+	this.props.onProgress(state.currentTime);
     }
 
     /**
