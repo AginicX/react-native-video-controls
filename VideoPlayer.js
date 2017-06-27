@@ -165,7 +165,7 @@ export default class VideoPlayer extends Component {
       this.setControlTimeout();
     }
 
-    this.props.onLoad && this.props.onLoad({ duration });
+    this.props.onLoad && this.props.onLoad({ duration: state.duration });
   }
 
   /**
